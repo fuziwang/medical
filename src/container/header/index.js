@@ -93,7 +93,7 @@ class header extends Component {
                             <Button type="default" class="regester" onClick={this.okHandle}>免费注册</Button>
                         </div>:
                         <div style={{float:'right'}}>
-                            欢迎你 <Link to="/my">15227111700</Link> <span style={{cursor:'pointer'}} onClick={this.handleCancle}>退出</span>
+                            欢迎你 <Link to="/my">0x63917B02..</Link> <span style={{cursor:'pointer'}} onClick={this.handleCancle}>退出</span>
                         </div>
                         }
                     </Col>

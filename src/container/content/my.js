@@ -15,7 +15,7 @@ export default class my extends Component {
         }
         this.columns = [
             {
-                title: '交易明细',
+                title: '交易记录',
                 dataIndex: 'title',
                 key: 'title',
             },
@@ -42,7 +42,7 @@ export default class my extends Component {
                         <Sider width={200} style={{ background: '#fff' }}>
                             <div>
                                 <img src={[require("../../assets/images/personimg.png")]} style={{width:'150px',height:'150px',display:'block',margin:'0px auto'}}/>
-                                <p style={{height:'20px',color:'#333',fontSize:'16px',textAlign:'center'}}>15227111700</p>
+                                <p style={{height:'40px',color:'#333',fontSize:'14px',textAlign:'center'}}>0x63917B02C0F4d7B5aDf<br/>b2208756Fb4bdfE364983</p>
                             </div>
                             <Menu
                                 mode="inline"
@@ -51,7 +51,7 @@ export default class my extends Component {
                                 <Menu.Item key="sub1" onClick={()=>{this.handleClick('sub1')}}><Icon type="user"/><span>我的主页</span></Menu.Item>
                                 <Menu.Item key="sub2"  onClick={()=>{this.handleClick('sub2')}}><Icon type="laptop"/><span>我的提问</span></Menu.Item>
                                 <Menu.Item key="sub3"  onClick={()=>{this.handleClick('sub3')}}><Icon type="laptop"/><span>我的回答</span></Menu.Item>
-                                <Menu.Item key="sub4" onClick={()=>{this.handleClick('sub4')}}><Icon type="notification"/><span>我的资产</span></Menu.Item>                               
+                                <Menu.Item key="sub4" onClick={()=>{this.handleClick('sub4')}}><Icon type="notification"/><span>我的积分</span></Menu.Item>                               
                             </Menu>
                         </Sider>
                         <Content style={{ background:'#fff',padding:'20px'}}>
@@ -59,7 +59,8 @@ export default class my extends Component {
                                 <div>
                                     <p style={{height:'30px',borderBottom:'1px solid #ccc',fontSize:'16px'}}>我的主页</p>
                                     <div>
-                                        链上账户信息：0x63917B02C0F4d7B5aDfb2208756Fb4bdfE364983
+                                        (ﾟ∀ ﾟ)
+                                        暂时没有任何数据
                                     </div>
                                 </div>:''
                             }
@@ -84,10 +85,9 @@ export default class my extends Component {
                             }
                             {this.state.key == 'sub4'?
                                 <div>
-                                    <p style={{height:'30px',borderBottom:'1px solid #ccc',fontSize:'16px'}}>我的资产</p>
+                                    <p style={{height:'30px',borderBottom:'1px solid #ccc',fontSize:'16px'}}>我的积分</p>
                                     <div>
-                                        链上剩余token信息：<b>0</b>
-                                        <Button type="primary">充值</Button>
+                                        当前积分情况：<b>0</b>
                                         <Table columns={this.columns} style={{marginTop:'10px'}}/>
                                     </div>
                                 </div>:''

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://192.168.80.122:8080",
+  "homepage":"./",
   "dependencies": {
     "antd": "^3.25.3",
     "axios": "^0.19.0",
