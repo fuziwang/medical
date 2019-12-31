@@ -1,0 +1,44 @@
+.title{
+    font-size: 20px;
+    color:#666;
+    text-align: center;
+    font-weight: 600;
+}
+
+.title span{
+    color:#1890ff;
+}
+
+.nav{
+    list-style: none;
+    font-size: 16px;
+    height: 64px;
+    padding: 0px;
+}
+
+.nav .active{
+    color:#1890ff;
+}
+
+.nav li{
+    float: left;
+    width:80px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 16px;
+}
+
+.nav li a{
+    color:#666;
+    font-weight: 600;
+}
+
+.nav li a:hover{
+    color:#1890ff;
+}
+
+
+.ant-btn-primary{
+    margin-left:20px;
+}
